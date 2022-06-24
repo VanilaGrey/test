@@ -1,0 +1,133 @@
+html {
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+}
+
+.page {
+    width: 100%;
+    background-color: #C0DBD9;
+}
+
+.page-header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 1170px;
+    height: 100px;
+    background-color: #7FAFF6;
+    margin: 0 auto;
+}
+
+.page-header__text {
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.page-header__toggle {
+    width: 206px;
+    height: 39px;
+    padding: 8px 15px;
+    margin-left: 30px;
+    background-color: #A5C7F9;
+    border: none;
+    border-radius: 5px;
+}
+
+.main__frapper {
+    display: grid;
+    grid-template-columns: 390px 1fr 160px;
+    gap: 15px;
+    width: 1170px;
+    height: 411px;
+    background-color: #B3F95A;
+    margin: 15px 0 0 15px;
+}
+
+.main__block {
+    background-color: #8AD191; 
+    height: 198px;
+    font-variant-numeric: oldstyle-nums;
+}
+
+.main__block--double {
+    grid-column: span 2;
+}
+
+.main__frapper-box {
+    background: #88B5BF;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0 30px;
+    margin: 15px 15px 0 15px;
+}
+
+.main__box {
+    width: 255px;
+    height: 199px;
+    background: #0D89B0;
+}
+
+
+.page-footer {
+    margin-top: auto;
+}
+
+.page-footer__wrapper {
+    background-color: #7FAFF7;
+    width: 1170px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.pop-up {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    display: none;
+}
+
+.pop-up__inner {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    text-align: center;
+    background: #FFFFFF;
+  }
+
+  .pop-up__button {
+    background-color: #7FAFF6;
+    border: none;
+    border-radius: 5px;
+    margin: 15px 0 0 326px;
+    padding: 8px 15px 7px 14px;
+  }
+
+  .pop-up__button::before {
+    content: "";
+    display: block;
+    background-color: #ffffff;
+    mask-image: url("../img/X.svg");
+    mask-repeat: no-repeat;
+    mask-position: 50%;
+    padding: 12px 7px;
+}
+
+  .pop-up__text {
+    display: block;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 53px;
+    margin-top: 114px;
+  }
